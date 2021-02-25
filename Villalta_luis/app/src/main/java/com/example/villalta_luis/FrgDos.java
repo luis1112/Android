@@ -1,6 +1,5 @@
 package com.example.villalta_luis;
 
-
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,11 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FrgDos#newInstance} factory method to
- * create an instance of this fragment.
- */
+import com.example.villalta_luis.R;
+
+
 public class FrgDos extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -62,14 +59,17 @@ public class FrgDos extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View vista= inflater.inflate(R.layout.fragment_frg_dos, container, false);
-        Button boton=vista.findViewById(R.id.btnMostrarMensajeFrg2);
+        //return inflater.inflate(R.layout.fragment_frg_dos, container, false);
+        View vista = inflater.inflate(R.layout.fragment_frg_dos, container, false);
+        Button boton = vista.findViewById(R.id.btnMostrarMensajeFrg2);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Soy la parte 2", Toast.LENGTH_LONG);
+                Toast.makeText(getContext(), "Soy parte del Frg2", Toast.LENGTH_LONG).show();
             }
         });
+
         return vista;
+
     }
 }

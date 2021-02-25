@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opcionMI"
+        android:title="Escritura">
+    </item>
+    <item
+        android:id="@+id/opcionMSD"
+        android:title="Escritura SD">
+    </item>
+    <item
+        android:id="@+id/opcionActividadMI"
+        android:title="Actividad MI">
+    </item>
+    <item
+        android:id="@+id/opcionDB"
+        android:title="SQLite">
+    </item>
+    <item
+        android:id="@+id/opcionAlumnoWS"
+        android:title="Alumno WS">
+    </item>
+</menu>

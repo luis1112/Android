@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.villalta_luis.R;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link FrgUno#newInstance} factory method to
@@ -25,7 +27,7 @@ public class FrgUno extends Fragment {
     private String mParam2;
 
     public FrgUno() {
-        // Required empty public constructora
+        // Required empty public constructor
     }
 
     /**

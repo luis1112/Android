@@ -3,37 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_primary_variant"
-    android:orientation="vertical"
-    tools:context=".FrgUno">
+    android:orientation="horizontal"
+    android:background="@color/design_default_color_on_primary"
+    tools:context="com.example.villalta_luis.FrgUno">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+
+    <EditText
+        android:id="@+id/txtEnviarDatosFrg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"/>
 
-        <Button
-            android:id="@+id/btnEnviarFrg1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+    <Button
+        android:id="@+id/btnEnviarFrg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button" />
 
-        <Button
-            android:id="@+id/btnEnviarFrg2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/contenedor"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-    </FrameLayout>
 
 </LinearLayout>

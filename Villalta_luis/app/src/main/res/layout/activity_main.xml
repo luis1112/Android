@@ -1,54 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/lblNombres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingrese Nombre"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="187dp" />
+    tools:context="com.example.villalta_luis.MainActivity">
 
     <EditText
         android:id="@+id/txtNombres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
-        android:hint="Ingrese Nombre"
+        android:hint="Ingrese sus Nombres"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="174dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toEndOf="@+id/lblNombre"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtApellidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:ems="10"
-        android:hint="Ingrese Apellido"
+        android:hint="Ingrese sus Apellidos"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="274dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toEndOf="@+id/lblApellido"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombres" />
 
     <TextView
-        android:id="@+id/lblApellidos"
+        android:id="@+id/lblNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingrese Apellidos"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="290dp" />
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="88dp"
+        android:text="Nombres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="204dp"
+        android:text="Apellidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:layout_marginBottom="340dp"
         android:text="Ingresar"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidos" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
